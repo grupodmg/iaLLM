@@ -4,7 +4,7 @@ from interfaces.chatinterfaces import InputMessage
 
 router = APIRouter()
 
-client = OpenAI(api_key="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",
+client = OpenAI(api_key="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",
                 base_url="https://openrouter.ai/api/v1")
 
 
@@ -16,7 +16,7 @@ def aiChat(data: InputMessage):
     message= "Por favor respode de manera correcta y concisa a la siguiente pregunta: "
 
     try:
-        completion = client.chat.completions.create(
+        completion = ChatCompletionResponse = client.chat.completions.create(
             model="cognitivecomputations/dolphin3.0-r1-mistral-24b:free",
             messages=[
                 {
