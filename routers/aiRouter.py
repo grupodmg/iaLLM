@@ -4,7 +4,7 @@ from interfaces.chatinterfaces import ChatCompletionResponse, InputMessage
 
 router = APIRouter()
 
-client = OpenAI(api_key="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",
+client = OpenAI(api_key="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",
                 base_url="https://openrouter.ai/api/v1")
 
 
@@ -17,7 +17,7 @@ def aiChat(data: InputMessage):
 
     try:
         completion: ChatCompletionResponse = client.chat.completions.create(
-            model="cognitivecomputations/dolphin3.0-r1-mistral-24b:free",
+            model="deepseek/deepseek-prover-v2:free",
             messages=[
                 {
                     "role": "system",

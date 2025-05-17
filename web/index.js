@@ -29,7 +29,7 @@ chatForm.addEventListener('submit', async (e) => {
         const data = await response.json();
         // Elimina el mensaje de "pensando"
         chatContainer.removeChild(chatContainer.lastChild);
-        addMessage(data.reply || 'Respuesta no disponible.', 'ai');
+        addMessage(data.response || 'Respuesta no disponible.', 'ai');
     } catch (err) {
         chatContainer.removeChild(chatContainer.lastChild);
         addMessage('Error al conectar con Cybertron. Intenta de nuevo.', 'ai');
