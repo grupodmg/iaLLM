@@ -4,7 +4,7 @@ from interfaces.chatinterfaces import ChatCompletionResponse, InputMessage
 
 router = APIRouter()
 
-client = OpenAI(api_key="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",
+client = OpenAI(api_key="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",
                 base_url="https://openrouter.ai/api/v1")
 
 
