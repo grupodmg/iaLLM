@@ -4,4 +4,3 @@ uvicorn
 gunicorn
 httptools
 openai
-routers
